@@ -55,6 +55,9 @@ class Client(BaseClient):
             cases.append(case)
         return cases
 
+def test():
+    1=1
+
     def get_case(self, case_id):
         res = self._http_request("GET", f"case/{case_id}", ok_codes=[200, 201, 404], resp_type="response")
         if res.status_code == 404:
